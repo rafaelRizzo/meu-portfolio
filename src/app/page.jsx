@@ -33,7 +33,7 @@ export default function Home() {
         <>
             <main className={`container-main flex flex-col items-center justify-center text-center ${currentTheme === 'light' ? 'img-light' : 'img-dark'} text-zinc-50 relative`}>
 
-                <div className="fixed top-0 right-0 z-50">
+                <div className="absolute top-5 right-5 z-50">
                     <DarkModeToggle />
                 </div>
 
@@ -132,12 +132,13 @@ export default function Home() {
                 <Experiences />
             </section>
 
-            <section className={`max-w-5xl mx-auto px-5 my-20`}>
+            <section className={`max-w-5xl mx-auto px-5 my-20 relative`}>
                 <h3 className="text-center font-semibold text-4xl mb-5">Projetos</h3>
                 <span className="text-muted-foreground -mt-5 mb-10 flex items-center justify-center">
                     Desenvolvimentos ao longo da minha jornada
                 </span>
 
+                <Image src={"/stars.png"} width={200} height={50} className="max-w-10 md:max-w-24 absolute top-20 md:top-10 right-0 md:-right-10 -z-10 dark:invert" />
                 <Projects />
             </section>
         </>

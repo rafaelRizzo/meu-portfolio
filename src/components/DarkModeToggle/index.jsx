@@ -8,7 +8,7 @@ export function DarkModeToggle() {
     const { theme, setTheme } = useTheme()
     const [mounted, setMounted] = React.useState(false)
 
-    // UseEffect para definir que o componente foi montado
+    // Define que o componente foi montado
     React.useEffect(() => {
         setMounted(true)
     }, [])
@@ -21,11 +21,11 @@ export function DarkModeToggle() {
     }
 
     return (
-        <div onClick={toggleTheme} className="cursor-pointer p-2">
+        <div onClick={toggleTheme} aria-label={`Ativar modo ${theme === "dark" ? "claro" : "escuro"}`} className="cursor-pointer border border-zinc-50/40 hover:bg-zinc-50/10 rounded-full transition-all p-1 shadow">
             {theme === "dark" ? (
-                <Sun className="h-6 w-6" />
+                <Sun className="h-5 w-5 drop-shadow" />
             ) : (
-                <Moon className="h-6 w-6" />
+                <Moon className="h-5 w-5 drop-shadow" />
             )}
         </div>
     )
