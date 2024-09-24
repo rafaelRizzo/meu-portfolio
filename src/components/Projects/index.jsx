@@ -93,6 +93,7 @@ export default function Projects() {
                                 width={800}
                                 height={600}
                                 className="w-full h-48 object-cover rounded-t-lg aspect-square"
+                                loading='lazy'
                             />
                         </CardHeader>
                         <CardContent className="flex-grow">
@@ -122,12 +123,7 @@ export default function Projects() {
 
                 ))}
 
-                <div className="text-center bg-blue-600 text-zinc-50 dark:bg-blue-600 rounded-lg text-xs px-3 py-3">
-                    <span>Alguns projetos não podem ser divulgados por motivos contratuais.</span>
-                </div>
-                <div className="text-center bg-blue-600 text-zinc-50 dark:bg-blue-600 rounded-lg text-xs px-3 py-3">
-                    <span>Em breve mais projetos...</span>
-                </div>
+              
             </div>
         </div>
     )

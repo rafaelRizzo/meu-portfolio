@@ -3,6 +3,7 @@
 import * as React from "react"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
+import { Button } from "../ui/button"
 
 export function DarkModeToggle() {
     const { theme, setTheme } = useTheme()
@@ -21,12 +22,18 @@ export function DarkModeToggle() {
     }
 
     return (
-        <div onClick={toggleTheme} aria-label={`Ativar modo ${theme === "dark" ? "claro" : "escuro"}`} className="cursor-pointer border border-zinc-50/40 hover:bg-zinc-50/10 rounded-full transition-all p-1 shadow">
+        <Button
+            onClick={toggleTheme}
+            aria-label={`Ativar modo ${theme === "dark" ? "claro" : "escuro"}`}
+            className="cursor-pointer border max-w-10 min-w-10 max-h-10 min-h-10
+            bg-zinc-950/5 hover:bg-zinc-950/10 border-zinc-950/30 text-zinc-800  
+            dark:bg-zinc-50/10 dark:hover:bg-zinc-50/15 dark:border-zinc-50/35 dark:text-zinc-200  
+        rounded-full transition-all p-1 shadow">
             {theme === "dark" ? (
                 <Sun className="h-5 w-5 drop-shadow" />
             ) : (
                 <Moon className="h-5 w-5 drop-shadow" />
             )}
-        </div>
+        </Button>
     )
 }

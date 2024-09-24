@@ -1,4 +1,3 @@
-import React from 'react'
 import { Card, CardContent } from "@/components/ui/card"
 
 const timelineData = [
@@ -6,7 +5,7 @@ const timelineData = [
         title: "Desenvolvedor Full Stack Pleno",
         company: "Phonevox Group",
         period: "2023 - Presente",
-        description: "Desenvolvimento de APIs REST e RESTful, sistemas de registro de atendimentos e integrações com ERPs, Telegram e Discord. Criação de dashboards empresariais e automação de tarefas e relatórios, além de soluções em Asterisk, resultando em processos mais eficientes."
+        description: "Desenvolvimento de APIs REST e RESTful, sistemas de registro de atendimentos e integrações com ERPs como IXCSoft e SGP, Telegram e Discord. Criação de dashboards empresariais e automação de tarefas e relatórios, além de soluções em Asterisk, resultando em processos mais eficientes e escaláveis."
     },
     {
         title: "Suporte VOIP",
@@ -24,7 +23,7 @@ const timelineData = [
         title: "T.I",
         company: "Lan House Sky Net",
         period: "2016 - 2021",
-        description: "Manutenção de computadores e redes, garantindo a operação contínua e a satisfação dos clientes."
+        description: "Manutenção de computadores e redes, garantindo a operação contínua."
     }
 ]
 

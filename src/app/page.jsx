@@ -18,11 +18,17 @@ import { TbBrandGithub } from "react-icons/tb";
 import Experiences from "@/components/Experiences";
 import Projects from "@/components/Projects";
 import { DarkModeToggle } from "@/components/DarkModeToggle";
+import Link from "next/link";
+
+import { useInView } from 'react-intersection-observer';
 
 export default function Home() {
     const { theme } = useTheme();
     const [currentTheme, setCurrentTheme] = useState("");
-
+    const { ref, inView } = useInView({
+        triggerOnce: true, // Garante que a animação ou estilo só acontece uma vez
+        threshold: 0.5, // 50% do elemento precisa estar visível
+    });
     useEffect(() => {
         if (theme) {
             setCurrentTheme(theme);
@@ -46,12 +52,14 @@ export default function Home() {
 
 
                 <div className="absolute left-0 right-0 bottom-0 flex items-center justify-center p-5 text-4xl animate-bounce">
-                    <MdOutlineKeyboardDoubleArrowDown />
+                    <Link href="#sobre">
+                        <MdOutlineKeyboardDoubleArrowDown />
+                    </Link>
                 </div>
 
             </main>
 
-            <section className={`max-w-5xl mx-auto px-5 my-20`}>
+            <section id="sobre" className={`max-w-5xl mx-auto px-5 my-20`}>
                 <h3 className="text-center font-semibold text-4xl mb-5">Sobre</h3>
                 <span className="text-muted-foreground -mt-5 mb-10 flex items-center justify-center">
                     Por onde tudo começou
@@ -59,15 +67,30 @@ export default function Home() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2">
 
-                    <div className="about-img flex items-center justify-center md:justify-start">
-                        <Image src={"/men.png"} width={280} height={400} className="drop-shadow" />
+                    <div className="about-img flex items-center justify-center md:justify-start relative select-none mb-5 md:mb-0">
+                        <Image
+                            src="/dots.png"
+                            width={400}
+                            height={50}
+                            ref={ref}
+                            className={`dots absolute mx-auto top-0 md:-top-10 left-0 md:-left-44 right-0
+                            ${inView ? 'view' : ''} max-w-56 md:max-w-full`}
+                        />
+                        <Image
+                            src={"/men.png"}
+                            width={280}
+                            height={400}
+                            className="max-w-52 md:max-w-full drop-shadow"
+                        />
                     </div>
 
-                    <div className="flex items-center tracking-wide text-lg">
-                        <p className="text-center">Fascinado por como a tecnologia resolve problemas, ao longo do tempo me aperfeiçoei em transformar desafios em oportunidades. Sou um desenvolvedor Full Stack, combinando habilidades para criar aplicações que são ao mesmo tempo elegantes e funcionais!</p>
+                    <div className="flex flex-col items-center justify-center tracking-wide text-lg text-start">
+                        <p>Sou um <span className={`bg-violet-500/25 dark:bg-violet-700/75 px-1 opacity-0 transition-all  ${inView ? 'view' : ''}`}>Desenvolvedor Full Stack</span> que curte criar apps bonitos e funcionais.</p>
+                        <p>Gosto de ver a tecnologia resolvendo problemas e, com o tempo, aprendi a transformar desafios em oportunidades.</p>
                     </div>
 
                 </div>
+
             </section>
 
             <section className={`max-w-5xl mx-auto px-5 my-20`}>
