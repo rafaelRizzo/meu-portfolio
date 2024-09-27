@@ -26,8 +26,7 @@ export function DarkModeToggle() {
             onClick={toggleTheme}
             aria-label={`Ativar modo ${theme === "dark" ? "claro" : "escuro"}`}
             className="cursor-pointer border max-w-10 min-w-10 max-h-10 min-h-10
-            bg-zinc-950/5 hover:bg-zinc-950/10 border-zinc-950/30 text-zinc-800  
-            dark:bg-zinc-50/10 dark:hover:bg-zinc-50/15 dark:border-zinc-50/35 dark:text-zinc-200  
+            bg-zinc-50/10 hover:bg-zinc-50/15 border-zinc-50 text-zinc-50  
         rounded-full transition-all p-1 shadow">
             {theme === "dark" ? (
                 <Sun className="h-5 w-5 drop-shadow" />

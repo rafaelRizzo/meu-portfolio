@@ -37,7 +37,7 @@ export default function Experiences() {
                             <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                         </svg>
                     </span>
-                    <Card className={`dark:border-zinc-50/10 transition-all ${index === 0 ? "border-purple-200 dark:border-purple-800" : ''}`}>
+                    <Card className={`dark:border-zinc-50/10 transition-all ${index === 0 ? "border-purple-300 dark:border-purple-800" : ''}`}>
                         <CardContent className="p-5">
                             <h3 className="flex items-center mb-1 text-lg font-semibold text-zinc-900 dark:text-zinc-100">{item.title}</h3>
                             <h4 className="block mb-2 text-sm font-normal leading-none text-zinc-400">{item.company}</h4>

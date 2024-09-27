@@ -20,7 +20,13 @@ import Projects from "@/components/Projects";
 import { DarkModeToggle } from "@/components/DarkModeToggle";
 import Link from "next/link";
 
+import { FaInstagram } from "react-icons/fa";
+import { FaSteamSymbol } from "react-icons/fa6";
+import { RiDiscordLine } from "react-icons/ri";
+import { FaLinkedinIn } from "react-icons/fa6";
+
 import { useInView } from 'react-intersection-observer';
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
     const { theme } = useTheme();
@@ -48,7 +54,7 @@ export default function Home() {
                     <Image src={"/effect-1.png"} width={200} height={50} className="max-w-20 md:max-w-full invert absolute -top-10 md:-top-24 right-7 flex items-center justify-center mx-auto" />
                 </h1>
 
-                <h2 className="text-3xl font-semibold drop-shadow relative">Dev Full Stack</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold drop-shadow relative">Dev Full Stack</h2>
 
 
                 <div className="absolute left-0 right-0 bottom-0 flex items-center justify-center p-5 text-4xl animate-bounce">
@@ -59,7 +65,9 @@ export default function Home() {
 
             </main>
 
-            <section id="sobre" className={`max-w-5xl mx-auto px-5 my-20`}>
+            <div id="sobre"></div>
+
+            <section className={`max-w-5xl mx-auto px-5 my-20`}>
                 <h3 className="text-center font-semibold text-4xl mb-5">Sobre</h3>
                 <span className="text-muted-foreground -mt-5 mb-10 flex items-center justify-center">
                     Por onde tudo começou
@@ -85,7 +93,7 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col items-center justify-center tracking-wide text-lg text-start">
-                        <p>Sou um <span className={`bg-violet-500/25 dark:bg-violet-700/75 px-1 opacity-0 transition-all  ${inView ? 'view' : ''}`}>Desenvolvedor Full Stack</span> que curte criar apps bonitos e funcionais.</p>
+                        <p>Sou um <span className={`bg-violet-500/25 dark:bg-violet-700/75 px-1`}>Desenvolvedor Full Stack</span> que curte criar apps bonitos e funcionais.</p>
                         <p>Gosto de ver a tecnologia resolvendo problemas e, com o tempo, aprendi a transformar desafios em oportunidades.</p>
                     </div>
 
@@ -164,6 +172,52 @@ export default function Home() {
                 <Image src={"/stars.png"} width={200} height={50} className="max-w-10 md:max-w-24 absolute top-20 md:top-10 right-0 md:-right-10 -z-10 dark:invert" />
                 <Projects />
             </section>
+
+            <footer className={`max-w-5xl mx-auto px-5 my-10 flex flex-col`}>
+
+                <div className="min-h-32 flex flex-col border dark:bg-zinc-900 rounded-lg p-5 gap-5 shadow">
+                    <ul className="flex items-center justify-center min-h-12 max-h-12 gap-2">
+                        <li className="flex items-center justify-center">
+                            <Link href="https://www.linkedin.com/in/rafael-rizzo-breschi-b02547216/" target="_blank" className="p-2.5 border dark:border-zinc-800 dark:bg-zinc-950 hover:bg-zinc-700/5 dark:hover:bg-zinc-50/5 text-zinc-600 dark:text-zinc-300 rounded-lg">
+                                <FaLinkedinIn />
+                                <span className="sr-only">Linkedin</span>
+                            </Link>
+                        </li>
+                        <li className="flex items-center justify-center">
+                            <Link href="https://www.instagram.com/rafael_breschi/" target="_blank" className="p-2.5 border dark:border-zinc-800 dark:bg-zinc-950 hover:bg-zinc-700/5 dark:hover:bg-zinc-50/5 text-zinc-600 dark:text-zinc-300 rounded-lg">
+                                <FaInstagram />
+                                <span className="sr-only">Instagram</span>
+                            </Link>
+                        </li>
+                        <li className="flex items-center justify-center">
+                            <Link href="https://steamcommunity.com/id/perfilRzz/" target="_blank" className="p-2.5 border dark:border-zinc-800 dark:bg-zinc-950 hover:bg-zinc-700/5 dark:hover:bg-zinc-50/5 text-zinc-600 dark:text-zinc-300 rounded-lg">
+                                <FaSteamSymbol />
+                                <span className="sr-only">Steam</span>
+                            </Link>
+                        </li>
+                        {/* <li className="flex items-center justify-center">
+                            <Link href="/" target="_blank" className="p-2.5 border dark:border-zinc-800 dark:bg-zinc-950 hover:bg-zinc-700/5 dark:hover:bg-zinc-50/5 text-zinc-600 dark:text-zinc-300 rounded-lg">
+                                <RiDiscordLine />
+                                <span className="sr-only">Discord</span>
+                            </Link>
+                        </li> */}
+                        <li className="flex items-center justify-center">
+                            <Link href="https://github.com/rafaelRizzo" target="_blank" className="p-2.5 border dark:border-zinc-800 dark:bg-zinc-950 hover:bg-zinc-700/5 dark:hover:bg-zinc-50/5 text-zinc-600 dark:text-zinc-300 rounded-lg">
+                                <TbBrandGithub />
+                                <span className="sr-only">Github</span>
+                            </Link>
+                        </li>
+
+                    </ul>
+
+                    <Separator />
+
+                    <div className="flex items-center justify-center min-h-6 max-h-6">
+                        <span className="text-sm font-thin italic text-center text-muted-foreground">&copy; Rafael Rizzo ~ 2024</span>
+                    </div>
+                </div>
+
+            </footer>
         </>
     );
 }

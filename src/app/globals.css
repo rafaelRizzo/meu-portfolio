@@ -34,11 +34,11 @@ body {
 }
 
 .img-light {
-    background-image: url("/main-light.jpg");
+    background-image: url("/main-light.webp");
 }
 
 .img-dark {
-    background-image: url("/main-dark.jpg");
+    background-image: url("/main-dark.webp");
 }
 
 .dots {
