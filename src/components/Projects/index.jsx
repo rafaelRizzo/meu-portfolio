@@ -79,6 +79,15 @@ const projects = [
         projectUrl: "https://clone-google.rafael-rizzo.com",
         githubUrl: "https://github.com/rafaelRizzo/clone-google",
     },
+    {
+        id: 9,
+        title: "Landing Page Next Level Design",
+        description: "Seguindo Um layout de uma design no Figma.",
+        imageUrl: "/projects/landing-next-level.webp",
+        projectUrl: "https://landing-next-level.rafael-rizzo.com",
+        githubUrl: "https://github.com/rafaelRizzo/landing-design-next-level",
+    }
+    // 
 
 ]
 
