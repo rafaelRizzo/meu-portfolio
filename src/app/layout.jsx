@@ -16,8 +16,21 @@ const geistMono = localFont({
 
 export const metadata = {
     title: "Rafael Rizzo - Desenvolvedor Full Stack",
-    description: "Rafael Rizzo é um desenvolvedor Full Stack com vasta experiência em tecnologias como Asterisk, Next.js, Node.js, PHP, MySQL e muito mais. Criando soluções web robustas e escaláveis.",
-    keywords: "Asterisk, Next.js, Node.js, PHP, MySQL, desenvolvedor full stack, soluções web, desenvolvimento backend, frontend, aplicações escaláveis, web developer, Rafael Rizzo",
+    description: "Rafael Rizzo é um desenvolvedor Full Stack com vasta experiência em tecnologias como Asterisk, Next.js, Node.js, PHP, MySQL e muito mais. Criando soluções web, API's robustas e escaláveis.",
+    keywords: [
+        "Asterisk",
+        "Next.js",
+        "Node.js",
+        "PHP",
+        "MySQL",
+        "desenvolvedor full stack",
+        "soluções web",
+        "desenvolvimento backend",
+        "frontend",
+        "aplicações escaláveis",
+        "web developer",
+        "Rafael Rizzo",
+    ].join(", "),
     openGraph: {
         title: "Rafael Rizzo - Desenvolvedor Full Stack",
         description: "Desenvolvedor Full Stack especializado em Asterisk, Next.js, Node.js, PHP, MySQL e na criação de soluções web inovadoras.",
@@ -25,11 +38,15 @@ export const metadata = {
         type: "website",
     },
     icons: {
-        icon: "/favicon.ico", // Caminho para o favicon na pasta public
-        shortcut: "/favicon.ico", // Caminho para o atalho
+        icon: "/favicon.ico",
+        shortcut: "/favicon.ico",
     },
-    robots: "index, follow",
+    robots: {
+        index: true,
+        follow: true,
+    },
 };
+
 
 export default function RootLayout({ children }) {
     return (
