@@ -2,10 +2,7 @@ export async function GET() {
     const baseUrl = "https://rafael-rizzo.com";
 
     const pages = [
-        { url: "/", changefreq: "daily", priority: 1.0 },
-        { url: "/about", changefreq: "monthly", priority: 0.8 },
-        { url: "/projects", changefreq: "weekly", priority: 0.9 },
-        { url: "/contact", changefreq: "monthly", priority: 0.8 },
+        { url: "/", changefreq: "daily", priority: 1.0 }
     ];
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
