@@ -17,6 +17,14 @@ import { GitHubLogoIcon } from '@radix-ui/react-icons';
 const projects = [
     {
         id: 1,
+        title: "Phonevox group",
+        description: "Landing page para a Phonevox Group, uma empresa de telecomunicações.",
+        imageUrl: "/projects/phonevox-group.webp",
+        projectUrl: "https://phonevox.com.br",
+        githubUrl: "https://github.com/rafaelRizzo/phonevox-group-landing-page",
+    },
+    {
+        id: 2,
         title: "Issabel PBX - FAQ",
         description: "FAQ estilo acordeon para tirar dúvidas sobre configurações e problemas comuns na utilização de um PABX open-source.",
         imageUrl: "/projects/faq.webp",
@@ -24,7 +32,7 @@ const projects = [
         githubUrl: "anonymous", // No momento ainda estou migrando esse projeto para minha conta pessoal pois foi uma iniciativa própria (mesmo que não reconhecida internamente pela empresa, pelo menos continua ajudando clientes e o N1 do setor, não espere que caridade dê dinheiro...)
     },
     {
-        id: 2,
+        id: 3,
         title: "Chihiro - Landing Page",
         description: "Homenagem a um filme deslumbrante que assisti, A Viagem de Chihiro.",
         imageUrl: "/projects/chihiro.webp",
@@ -32,7 +40,7 @@ const projects = [
         githubUrl: "https://github.com/rafaelRizzo/chihiro-nextjs",
     },
     {
-        id: 3,
+        id: 4,
         title: "Iniciador de conversa Whatsapp",
         description: "Todos precisamos chamar clientes ou pessoas mas não queremos adiciona-los em nossos contatos, essa solução serve justamente para isso.",
         imageUrl: "/projects/chama-la.webp",
@@ -40,7 +48,7 @@ const projects = [
         githubUrl: "https://github.com/rafaelRizzo/chama-la-nextjs",
     },
     {
-        id: 4,
+        id: 5,
         title: "Loopstudios - VR e AR",
         description: "Projeto de landing page para uma loja fictícia sobre realidade virtual e aumentada.",
         imageUrl: "/projects/loopstudios.webp",
@@ -48,7 +56,7 @@ const projects = [
         githubUrl: "https://github.com/rafaelRizzo/LoopstudiosFrontEndMentor",
     },
     {
-        id: 5,
+        id: 6,
         title: "Player de música",
         description: "Projeto pessoal de um player de música marcante.",
         imageUrl: "/projects/player-de-musica.webp",
@@ -56,7 +64,7 @@ const projects = [
         githubUrl: "https://github.com/rafaelRizzo/player-music-nextjs",
     },
     {
-        id: 6,
+        id: 7,
         title: "KI Delicia - Sorveteria",
         description: "Projeto pessoal para uma loja de sorvete fictícia.",
         imageUrl: "/projects/sorvete.webp",
@@ -64,7 +72,7 @@ const projects = [
         githubUrl: "https://github.com/rafaelRizzo/projetoSorveteriaWeb",
     },
     {
-        id: 7,
+        id: 8,
         title: "Caravan - Agência de viagens",
         description: "Projeto para uma agência de viagens fictícia.",
         imageUrl: "/projects/caravan.webp",
@@ -72,7 +80,7 @@ const projects = [
         githubUrl: "https://github.com/rafaelRizzo/projetoCaravan",
     },
     {
-        id: 8,
+        id: 9,
         title: "Clone do Google",
         description: "Projeto de desafio, testando habilidades de replicação, um dos primeiros.",
         imageUrl: "/projects/clone-google.webp",
@@ -80,15 +88,13 @@ const projects = [
         githubUrl: "https://github.com/rafaelRizzo/clone-google",
     },
     {
-        id: 9,
+        id: 10,
         title: "Landing Page Next Level Design",
         description: "Seguindo o layout de uma designer no Figma.",
         imageUrl: "/projects/landing-next-level.webp",
         projectUrl: "https://landing-next-level.rafael-rizzo.com",
         githubUrl: "https://github.com/rafaelRizzo/landing-design-next-level",
     }
-    // 
-
 ]
 
 export default function Projects() {

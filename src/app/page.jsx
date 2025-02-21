@@ -50,7 +50,7 @@ export default function Home() {
 
                 <h1 className="flex flex-col items-center justify-center font-bold text-6xl md:text-8xl drop-shadow relative">
                     <span>Rafael Rizzo</span>
-                    <Image src={"/effect-1.png"} width={200} height={50} className="max-w-20 md:max-w-full invert absolute -top-10 md:-top-24 right-7 flex items-center justify-center mx-auto" />
+                    <Image src={"/effect-1.png"} width={200} height={50} alt="Efeito plink de destaque" className="max-w-20 md:max-w-full invert absolute -top-10 md:-top-24 right-7 flex items-center justify-center mx-auto" />
                 </h1>
 
                 <h2 className="text-2xl md:text-3xl font-semibold drop-shadow relative">Dev Full Stack</h2>
@@ -170,7 +170,7 @@ export default function Home() {
                     Desenvolvimentos ao longo da minha jornada
                 </span>
 
-                <Image src={"/stars.png"} width={200} height={50} className="max-w-10 md:max-w-24 absolute top-20 md:top-10 right-0 md:-right-10 -z-10 dark:invert" />
+                <Image src={"/stars.png"} width={200} height={50} alt="Icone de estrelas" className="max-w-10 md:max-w-24 absolute top-20 md:top-10 right-0 md:-right-10 -z-10 dark:invert" />
                 <Projects />
             </section>
 
