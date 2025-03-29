@@ -8,7 +8,6 @@ import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import { SiAsterisk } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { RiNodejsLine } from "react-icons/ri";
-import { FaPhp } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { SiMongodb } from "react-icons/si";
 import { FaLinux } from "react-icons/fa6";
@@ -94,7 +93,7 @@ export default function Home() {
 
                     <div className="flex flex-col items-center justify-center tracking-wide text-lg text-start">
                         <p>
-                            Sou um <span className={`bg-violet-500/25 dark:bg-violet-700/75 px-1`}>Desenvolvedor Full Stack</span> com ampla experiência em desenvolvimento de soluções usando <strong>Asterisk, Next.js, Node.js, PHP e MySQL</strong>. Adoro criar apps bonitos e funcionais que resolvem problemas reais de forma eficiente.
+                            Sou um <span className={`bg-violet-500/25 dark:bg-violet-700/75 px-1`}>Desenvolvedor Full Stack</span> com ampla experiência em desenvolvimento de soluções usando <strong>Asterisk, Next.js, Node.js e MySQL</strong>. Adoro criar apps bonitos e funcionais que resolvem problemas reais de forma eficiente.
                         </p>
 
                     </div>
@@ -122,21 +121,21 @@ export default function Home() {
                         <RiNodejsLine className="text-3xl" />
                         <span>Node.js</span>
                     </div>
-                    <div className="bg-indigo-100 text-indigo-600 dark:bg-indigo-700/20 border-indigo-100 dark:border dark:border-indigo-700/40 dark:text-indigo-200 py-2 px-4 rounded-full flex items-center space-x-2" aria-label="Tecnologia PHP">
-                        <FaPhp className="text-3xl" />
-                        <span>PHP</span>
+                    <div className="bg-teal-100 text-teal-600 dark:bg-teal-700/20 border-teal-100 dark:border dark:border-teal-700/40 dark:text-teal-200 py-2 px-4 rounded-full flex items-center space-x-2" aria-label="Tecnologia MySQL">
+                        <GrMysql className="text-3xl" />
+                        <span>MySQL</span>
                     </div>
                     <div className="bg-green-100 text-green-700 dark:bg-green-800/20 border-green-100 dark:border dark:border-green-800/40 dark:text-green-300 py-2 px-4 rounded-full flex items-center space-x-2" aria-label="Tecnologia NGINX">
                         <DiNginx className="text-3xl" />
                         <span>Nginx</span>
                     </div>
-                    <div className="bg-teal-100 text-teal-600 dark:bg-teal-700/20 border-teal-100 dark:border dark:border-teal-700/40 dark:text-teal-200 py-2 px-4 rounded-full flex items-center space-x-2" aria-label="Tecnologia MySQL">
-                        <GrMysql className="text-3xl" />
-                        <span>MySQL</span>
-                    </div>
                     <div className="bg-neutral-100 text-neutral-800 dark:bg-neutral-700/20 border-neutral-100 dark:border dark:border-neutral-700/40 dark:text-neutral-200 py-2 px-4 rounded-full flex items-center space-x-2" aria-label="Tecnologia Linux">
                         <FaLinux className="text-3xl" />
                         <span>Linux</span>
+                    </div>
+                    <div className="bg-zinc-100 text-zinc-600 dark:bg-zinc-700/20 border-zinc-100 dark:border dark:border-zinc-700/40 dark:text-zinc-200 py-2 px-4 rounded-full flex items-center space-x-2" aria-label="Tecnologia GitHub">
+                        <TbBrandGithub className="text-3xl" />
+                        <span>GitHub</span>
                     </div>
                     <div className="bg-green-100 text-green-700 dark:bg-green-800/20 border-green-100 dark:border dark:border-green-800/40 dark:text-green-300 py-2 px-4 rounded-full flex items-center space-x-2" aria-label="Tecnologia MongoDB">
                         <SiMongodb className="text-3xl" />
@@ -146,11 +145,6 @@ export default function Home() {
                         <SiGrafana className="text-3xl" />
                         <span>Grafana</span>
                     </div>
-                    <div className="bg-zinc-100 text-zinc-600 dark:bg-zinc-700/20 border-zinc-100 dark:border dark:border-zinc-700/40 dark:text-zinc-200 py-2 px-4 rounded-full flex items-center space-x-2" aria-label="Tecnologia GitHub">
-                        <TbBrandGithub className="text-3xl" />
-                        <span>GitHub</span>
-                    </div>
-
                 </div>
 
             </section>
@@ -208,7 +202,8 @@ export default function Home() {
                     <Separator />
 
                     <div className="flex items-center justify-center min-h-6 max-h-6">
-                        <span className="text-sm font-thin italic text-center text-muted-foreground">&copy; Rafael Rizzo ~ 2024</span>
+                        <span className="text-sm font-thin italic text-center text-muted-foreground">&copy; 2025 Rafael Rizzo. Todos os direitos reservados.
+                        </span>
                     </div>
                 </div>
 

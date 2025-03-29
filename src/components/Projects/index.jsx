@@ -21,7 +21,7 @@ const projects = [
         description: "Landing page para a Phonevox Group, uma empresa de telecomunicações.",
         imageUrl: "/projects/phonevox-group.webp",
         projectUrl: "https://phonevox.com.br",
-        githubUrl: "https://github.com/rafaelRizzo/phonevox-group-landing-page",
+        githubUrl: "anonymous",
     },
     {
         id: 2,
