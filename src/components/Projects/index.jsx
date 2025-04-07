@@ -81,14 +81,6 @@ const projects = [
     },
     {
         id: 9,
-        title: "Clone do Google",
-        description: "Projeto de desafio, testando habilidades de replicação, um dos primeiros.",
-        imageUrl: "/projects/clone-google.webp",
-        projectUrl: "https://clone-google.rafael-rizzo.com",
-        githubUrl: "https://github.com/rafaelRizzo/clone-google",
-    },
-    {
-        id: 10,
         title: "Landing Page Next Level Design",
         description: "Seguindo o layout de uma designer no Figma.",
         imageUrl: "/projects/landing-next-level.webp",
