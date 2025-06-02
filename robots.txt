@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /men.png
-Sitemap: https://rafael-rizzo.com/sitemap.xml
