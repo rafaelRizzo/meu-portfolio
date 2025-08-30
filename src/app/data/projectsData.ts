@@ -8,6 +8,14 @@ export const projectsData = [
         description: "Landing page para o evento ConectaSST.",
     },
     {
+        url: "cards.rafael-rizzo.com",
+        imageSrc: "/cards-json.webp",
+        projectLink: "https://cards.rafael-rizzo.com/",
+        repo_indisponivel: true,
+        title: "Cards JSON",
+        description: "Scripts para gerar copia e cola.",
+    },
+    {
         url: "phonevox.com.br",
         imageSrc: "/phonevox.webp",
         projectLink: "https://phonevox.com.br",
