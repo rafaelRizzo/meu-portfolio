@@ -33,7 +33,7 @@ export const ListOfTecnologies = () => {
                 className="bg-amber-600/15 dark:bg-amber-600/5 border dark:border-amber-600/10 text-amber-700 dark:text-amber-500"
             >
                 <SiFastify />
-                <span>Fastify</span>
+                <span>FASTIFY</span>
             </Badge>
             <Badge
                 variant="secondary"
@@ -54,7 +54,7 @@ export const ListOfTecnologies = () => {
                 className="bg-teal-600/15 dark:bg-teal-600/5 border dark:border-teal-600/10 text-teal-700 dark:text-teal-500"
             >
                 <SiMongodb />
-                <span>MongoDB</span>
+                <span>MONGODB</span>
             </Badge>
             <Badge
                 variant="secondary"
