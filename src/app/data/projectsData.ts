@@ -16,9 +16,9 @@ export const projectsData = [
         description: "Scripts para gerar copia e cola.",
     },
     {
-        url: "phonevox.com.br",
+        url: "phonevox-group-landing-page.vercel.app",
         imageSrc: "/phonevox.webp",
-        projectLink: "https://phonevox.com.br",
+        projectLink: "https://phonevox-group-landing-page.vercel.app",
         repo_indisponivel: true,
         title: "Phonevox Group",
         description: "Site da Phonevox Group.",
