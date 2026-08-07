@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         default: "Rafael Rizzo | Desenvolvedor Full Stack",
         template: "%s | Rafael Rizzo",
     },
-    description: "Desenvolvedor Full Stack focado em soluções modernas, desempenho e que geram resultados. Veja meus projetos e entre em contato.",
+    description: "Desenvolvedor Full Stack focado em sistemas web e automações. Veja meus projetos e entre em contato.",
     metadataBase: new URL("https://rafael-rizzo.com"),
     applicationName: "Portfólio de Rafael Rizzo",
     keywords: [
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
         url: "https://rafael-rizzo.com",
         siteName: "Portfólio de Rafael Rizzo",
         title: "Desenvolvedor Full Stack | Rafael Rizzo",
-        description: "Desenvolvedor Full Stack focado em soluções modernas, desempenho e que geram resultados. Veja meus projetos e entre em contato.",
+        description: "Desenvolvedor Full Stack focado em sistemas web e automações. Veja meus projetos e entre em contato.",
     },
     icons: {
         icon: "/favicon/favicon.ico",

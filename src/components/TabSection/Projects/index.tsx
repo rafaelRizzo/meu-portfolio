@@ -1,13 +1,17 @@
 import { projectsData } from "@/app/data/projectsData";
 import { Safari } from "@/components/magicui/safari";
+import { Terminal, TypingAnimation, AnimatedSpan } from "@/components/ui/terminal";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
 
+type TerminalLine = { type: "cmd" | "out"; text: string };
+
 type ProjectCardProps = {
     url: string;
-    imageSrc: string;
+    imageSrc?: string;
+    terminalLines?: readonly TerminalLine[];
     projectLink: string;
     repoLink?: string;
     repo_indisponivel?: boolean;
@@ -15,7 +19,7 @@ type ProjectCardProps = {
     description?: string;
 };
 
-const ProjectCard = ({ url, imageSrc, projectLink, repoLink = "", repo_indisponivel = false, title = "", description = "" }: ProjectCardProps) => {
+const ProjectCard = ({ url, imageSrc, terminalLines, projectLink, repoLink = "", repo_indisponivel = false, title = "", description = "" }: ProjectCardProps) => {
     return (
         <div className="space-y-3">
             <div className="relative">
@@ -23,11 +27,27 @@ const ProjectCard = ({ url, imageSrc, projectLink, repoLink = "", repo_indisponi
                     <span>{title}</span>
                     <span className="text-muted-foreground">{description}</span>
                 </div>
-                <Safari
-                    className="size-full object-cover object-center"
-                    url={url}
-                    imageSrc={imageSrc}
-                />
+                {terminalLines ? (
+                    <Terminal className="max-w-none h-[420px] font-mono text-sm">
+                        {terminalLines.map((line, i) =>
+                            line.type === "cmd" ? (
+                                <TypingAnimation key={i} className="text-green-500">
+                                    {`$ ${line.text}`}
+                                </TypingAnimation>
+                            ) : (
+                                <AnimatedSpan key={i} className="text-muted-foreground">
+                                    {line.text}
+                                </AnimatedSpan>
+                            )
+                        )}
+                    </Terminal>
+                ) : (
+                    <Safari
+                        className="size-full object-cover object-center"
+                        url={url}
+                        imageSrc={imageSrc ?? ""}
+                    />
+                )}
             </div>
 
             <div className="grid grid-cols-2 gap-2">
