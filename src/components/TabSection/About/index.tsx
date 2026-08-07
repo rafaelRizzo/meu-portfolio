@@ -14,7 +14,7 @@ export const About = () => {
             </CardHeader>
             <CardContent className="grid gap-6 text-xs">
                 <p>{totalExp} anos de experiência e {marketExp} anos de mercado, atuando desde os 17 anos.</p>
-                <p>Especialista em desenvolvimento de sistemas web, landing pages, API RESTful, automações e muito mais.</p>
+                <p>Full stack focado em sistemas web e automações. Especialista em desenvolvimento de sistemas web, API RESTful, automações e muito mais.</p>
                 <p>Minha missão: fazer o difícil parecer simples.</p>
             </CardContent>
         </Card>

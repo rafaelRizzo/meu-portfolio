@@ -1,5 +1,37 @@
 export const projectsData = [
     {
+        url: "log-tracer.rafael-rizzo.com",
+        imageSrc: "/log-tracer-psql.png",
+        projectLink: "https://log-tracer.rafael-rizzo.com",
+        repoLink: "https://github.com/rafaelRizzo/log-tracer-psql",
+        title: "Log Tracer PSQL",
+        description: "Coletor de logs com PostgreSQL e TimescaleDB, dashboard, API e ingestão em lote.",
+    },
+    {
+        url: "github.com/rafaelRizzo/manage-fw",
+        terminalLines: [
+            { type: "cmd", text: "manage-fw add 203.0.113.42 8443" },
+            { type: "out", text: "✔ whitelist: 203.0.113.42 -> porta 8443" },
+            { type: "cmd", text: "manage-fw list" },
+            { type: "out", text: "8443  203.0.113.42/32  ACCEPT" },
+            { type: "out", text: "22    0.0.0.0/0        ACCEPT (ssh sempre liberado)" },
+            { type: "cmd", text: "manage-fw reload" },
+            { type: "out", text: "✔ nftables + fail2ban recarregados" },
+        ] as const,
+        projectLink: "https://github.com/rafaelRizzo/manage-fw",
+        repoLink: "https://github.com/rafaelRizzo/manage-fw",
+        title: "Manage FW",
+        description: "Firewall custom com nftables e Fail2Ban, whitelist de IPs via CLI.",
+    },
+    {
+        url: "github.com/rafaelRizzo/stock-lan",
+        imageSrc: "/stock-lan.png",
+        projectLink: "https://github.com/rafaelRizzo/stock-lan",
+        repoLink: "https://github.com/rafaelRizzo/stock-lan",
+        title: "Stock Lan",
+        description: "Sistema de gestão de estoque: matéria-prima, produtos acabados, vendas e relatórios.",
+    },
+    {
         url: "connectsst-ivpg.vercel.app",
         imageSrc: "/conecta-sst.webp",
         projectLink: "https://connectsst-ivpg.vercel.app/",
