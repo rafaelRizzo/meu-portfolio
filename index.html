@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título, meta tags, Open Graph e JSON-LD são gerados de src/data/*.ts (seo/seo-plugin.ts). -->
+    <!--seo:head-->
+
+    <script>
+      // Aplica o tema antes da primeira pintura (dark por padrão).
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light") document.documentElement.classList.remove("dark");
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"><!--seo:root--></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
