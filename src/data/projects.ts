@@ -33,6 +33,16 @@ const HD16x9 = [1920, 1080] as const
 
 export const projects: Project[] = [
   {
+    title: "open-filter",
+    description:
+      "Editor de fotos no navegador com filtros, curvas, LUT 3D e presets. Processa em WebGL e a foto nunca sai do seu computador. React, PixiJS e Supabase.",
+    url: "open-filter.rafael-rizzo.com",
+    image: img("open-filter.webp"),
+    size: [2000, 1106],
+    projectLink: "https://open-filter.rafael-rizzo.com",
+    repoLink: "https://github.com/rafaelRizzo/open-filter",
+  },
+  {
     title: "Dynamic Lite",
     description: "Dynamic Island para macOS que vive no notch e vira player do Spotify. Tauri, Rust e React.",
     url: "github.com/rafaelRizzo/dynamic-lite",
